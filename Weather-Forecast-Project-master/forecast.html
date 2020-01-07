@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Weather Forecast</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/weather-icons.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <header>
+        <div class="wrap">
+            <div class="search">
+                <!-- using search -->
+                <!-- <input type="text" class="searchBox" id="searchBox" placeholder="Enter a City Name">
+                <button id="searchButton" class="searchButton">
+                    <img src="css/images/search.png" alt="">
+                </button> -->
+                 <!-- using 10 city List -->
+                <select class="searchBox" id="searchBox">
+                    <option>select the City</option>
+                    <option>Mumbai</option>
+                    <option>Delhi</option>
+                    <option>Bangalore</option>
+                    <option>Hyderabad</option>
+                    <option>Chennai</option>
+                    <option>Kolkata</option>
+                    <option>Jaipur</option>
+                    <option>Lucknow</option>
+                    <option>Bhopal</option>
+                    <option>Patna</option>
+                </select>
+
+
+            </div>
+        </div>
+    </header>
+
+    <main class="content">
+        <div class="current">
+            <div class="generalInfo">
+                <p class="location" id="mainLoc" style="font-size:3vw;"></p>
+                <p class="date" id="currentDate" style="font-size:2vw;"></p>
+                <i class="wi wi-night-sleet" id="currentIcon" style="font-size:8vw;"></i>
+                <p class="mainTemp" id="mainTemp" style="font-size:2vw;"></p>
+                <p class="mainDescr" id="mainDescr" style="font-size:2vw;"></p>
+            </div>
+
+            <div class="line"> <!-- LINE --></div>
+
+            <div class="details">
+                <div>
+                    <p style="font-size:2vw;">Wind Speed :</p>
+                    <p id="windSpeed" style="font-size:2vw;"></p>
+                    <i class="wi wi-direction-up" class="windIcon" id="windIcon"></i>
+                </div>
+                <div>
+                    <p style="font-size:2vw;">Pressure :</p>
+                    <p id="pressure" style="font-size:2vw;"></p>
+                </div>
+                <div>
+                    <p style="font-size:2vw;">Cloudiness :</p>
+                    <p id="clouds" style="font-size:2vw;"></p>
+                </div>      
+            </div>
+        </div>
+    
+      
+    </main>
+</body>
+</html>
